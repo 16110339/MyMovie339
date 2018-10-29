@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="harisangriawan.mymovie339.DetailActivity">
+    tools:context="harisangriawan.mymovie339.DetailActivity"
+    android:background="@color/colorBackground">
     <TextView
         android:id="@+id/judul"
         android:layout_width="match_parent"
@@ -15,7 +16,7 @@
         android:gravity="center"
         android:textStyle="bold"
         android:textSize="18sp"
-        android:background="#000"
+        android:background="@color/colorDetailBg"
         android:layout_marginBottom="10dp"/>
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,6 +44,16 @@
                 android:id="@+id/rating"
                 android:layout_marginLeft="6dp"
                 android:drawableLeft="@drawable/ic_rating"
+                android:textSize="18sp"
+                android:drawablePadding="10dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/bahasa"
+                android:layout_marginLeft="6dp"
+                android:drawableLeft="@drawable/ic_bahasa"
                 android:textSize="18sp"
                 android:drawablePadding="10dp"
                 android:textStyle="bold"
