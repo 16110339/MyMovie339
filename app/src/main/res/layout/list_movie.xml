@@ -4,37 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:layout_marginTop="5dp">
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:clickable="false">
+        android:layout_height="180dp">
 
         <ImageView
-        android:adjustViewBounds="true"
-        android:id="@+id/poster"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"/>
+            android:id="@+id/poster"
+            android:layout_width="130dp"
+            android:layout_height="180dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
 
-        <TextView
-            android:id="@+id/title_main"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/poster"
-            android:layout_centerHorizontal="true"
-            android:padding="10dp"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="20dp"/>
-        <TextView
-            android:id="@+id/overview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/poster"
-            android:layout_centerHorizontal="true"
-            android:padding="10dp"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/title_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Ini Judul"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/sinopsis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Ini Overview"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
